@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    script(src='/assets/vendor.js')
+    script(src='/assets/emberapp.js')
+  body
+    h2(style='background-color: red') Header
+    #ember-app
+      //- include ../emberapp/dist/index.html
+    h2(style='background-color: red') Footer
