@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'emberapp',
     environment: environment,
     rootURL: '/',
-    locationType: 'none', //auto by default - Change 2
+    locationType: 'none', //Change 2 - auto by default
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -23,7 +23,7 @@ module.exports = function(environment) {
     }
   };
 
-  if (environment === 'local') { // Change 3
+  if (environment === 'local') { //Change 3
   }
 
   if (environment === 'development') {
