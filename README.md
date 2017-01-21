@@ -8,7 +8,7 @@ cd emberapp
 ```
 
 ### Run Ember app separately locally
-`ember serve --environment=local` or just `ember s --environment=local`
+`ember serve --env local` or just `ember s --env local`
 
 Go to [http://localhost:4200](http://localhost:4200)
 

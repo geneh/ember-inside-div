@@ -3,7 +3,6 @@ const path = require('path');
 const app = express();
 
 app.set('view engine', 'pug');
-// app.set('view cache', false);
 app.get('/', (req, res) => {
   res.render('index', { title: 'Hey' });
 });
