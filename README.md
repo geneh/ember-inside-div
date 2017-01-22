@@ -7,13 +7,13 @@ npm install -g ember-cli
 cd emberapp
 ```
 
-### Run Ember app separately locally
-`ember serve --env local` or just `ember s --env local`
+### Run independent Ember app locally (default development environment)
+`ember serve` or just `ember s`
 
 Go to [http://localhost:4200](http://localhost:4200)
 
 ### Run inside a web app
-`ember build` or just `ember b`
+`ember build --env production` or just `ember b --env production`
 
 ## Run Express app
 ```

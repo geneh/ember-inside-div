@@ -5,8 +5,12 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function (defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
-    //Change 4:  don't store config in meta
-    storeConfigInMeta: false
+    //Change:  don't store config in meta
+    storeConfigInMeta: false,
+    //Change: don't fingerprint production build
+    fingerprint: {
+      enabled: false
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

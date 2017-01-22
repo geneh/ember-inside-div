@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'emberapp',
     environment: environment,
     rootURL: '/',
-    locationType: 'hash', //Change 2 - auto by default, another option is none
+    locationType: 'hash', //Change - auto by default, another option is none
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -23,11 +23,7 @@ module.exports = function(environment) {
     }
   };
 
-  if (environment === 'local') { //Change 3
-  }
-
   if (environment === 'development') {
-    ENV.APP.rootElement = '#ember-app'; //Change 1
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -47,7 +43,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    // ENV.rootURL = '/some-url'; //Change if required
+    ENV.APP.rootElement = '#ember-app'; //Change
   }
 
   return ENV;
