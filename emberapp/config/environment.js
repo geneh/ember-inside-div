@@ -43,7 +43,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // ENV.rootURL = '/some-url'; //Change if required
     ENV.APP.rootElement = '#ember-app'; //Change
   }
 

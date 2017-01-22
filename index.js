@@ -6,6 +6,9 @@ app.set('view engine', 'pug');
 app.get('/', (req, res) => {
   res.render('index', { title: 'Hey' });
 });
+app.get('/spa', (req, res) => {
+  res.render('spa');
+});
 app.use(express.static(__dirname + '/emberapp/dist'));
 
 app.listen(3000, () => {
